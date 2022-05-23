@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style></style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Title-->
+    <title>Project Of Rashed Vai</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../logo/baytech.png" type="image/x-icon" />
+
+    <!-- font awesome file link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/logo.css" />
+    <!-- boostrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script src="main.js"></script>
+    <script src="aboutus.js"></script>
+  </head>
+
+  <body>
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <!-- header section starts  -->
+
+    <header class="header service-page-header">
+      <a href="index.html" class="logo"
+        ><img src="../logo/baytech.png" alt=""
+      /></a>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li>
+            <a href="#">about us +</a>
+            <ul>
+              <li><a href="about-history.html">Our History</a></li>
+              <li><a href="about-history.html#People">People</a></li>
+              <li><a href="about-history.html#Contracting">Contact</a></li>
+              <li><a href="about-history.html#Current">Career</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">services +</a>
+            <ul>
+              <li>
+                <a href="service1.html">Baytech NDT & Engineering Services</a>
+              </li>
+              <li><a href="BSSZ.html">Baytech Ship Solution Zone</a></li>
+              <li><a href="shipyard.html">Baytech Shipbuilders</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">projects +</a>
+            <ul>
+              <li><a href="completedproject.html">Completed</a></li>
+              <li><a href="projectongoing.html">Ongoing</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Gallery +</a>
+            <ul>
+              <li><a href="photogallery.html">Image</a></li>
+              <li><a href="videogallery.html">Video</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+    <div
+      class="w3-content w3-display-container"
+      style="max-width: 100%; height: 700px"
+    >
+      <img
+        class="mySlides"
+        src="../image/slider-1.jpg"
+        style="width: 100%; height: 700px"
+      />
+      <img
+        class="mySlides"
+        src="../image/slider-2.jpg"
+        style="width: 100%; height: 700px"
+      />
+      <img
+        class="mySlides"
+        src="../image/Slide-3.jpg"
+        style="width: 100%; height: 700px"
+      />
+      <div
+        class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+        style="width: 100%"
+      >
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">
+          &#10094;
+        </div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">
+          &#10095;
+        </div>
+        <span
+          class="w3-badge demo w3-border w3-transparent w3-hover-white"
+          onclick="currentDiv(1)"
+        ></span>
+        <span
+          class="w3-badge demo w3-border w3-transparent w3-hover-white"
+          onclick="currentDiv(2)"
+        ></span>
+        <span
+          class="w3-badge demo w3-border w3-transparent w3-hover-white"
+          onclick="currentDiv(3)"
+        ></span>
+      </div>
+    </div>
+    <!--About-US-page Home-->
+
+    <!--About-US-home end-->
+
+    <!--About-US-home Links-->
+
+    <section>
+      <div class="service-page">
+        <span>
+          <a href="#">Our History</a> | <a href="#People">People</a> |
+          <a href="#Contracting">Contact</a> | <a href="#Current">Career</a> |
+        </span>
+      </div>
+    </section>
+
+    <!--About-US-home Links end-->
+
+    <!-- Our History  -->
+
+    <!--<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="shipyard/shipyard.jpg" style="width:100%;border-radius: 25px;">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="shipyard/shipyard1.jpg" style="width:100%;border-radius: 25px;">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="shipyard/shipyard3.jpg" style="width:100%;border-radius: 25px;">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>    -->
+
+    <section class="about">
+      <h1 class="heading service-page-heading">Bay-Tech</h1>
+      <div class="row">
+        <div class="content"></div>
+      </div>
+    </section>
+    <section>
+      <div class="service-page-content">
+        <span>
+          Bay-Tech is unique in its ability to tackle projects engineering
+          challenges on land, shore and at sea. Expertise in naval architecture
+          and marine engineering is our heritage. BayTech has earned its
+          reputation across industry for highly engineered and cost effective
+          design with timely delivery. And continue to serve naval architecture
+          services to clients like Bashundora Group (One of the largest business
+          conglomerate in Bangladesh,Seven Ring Cements, BIWTA (Bangladesh
+          Inland Water Transport Authority) and many others. But beyond our
+          skill in naval architecture, we offer a broad range of expertise that
+          includes Structural, Mechanical, Electrical engineering; Engineering
+          Simulation & Analysis; marine and facilities construction management;
+          transportation planning and marine research. Browse through our
+          projects and see how Bay-Tech can help solve your design challenges!
+        </span>
+      </div>
+    </section>
+
+    <h1
+      style="
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+        color: rgb(12, 200, 100);
+      "
+    >
+      Our Certification / Approval
+    </h1>
+    <!--gallery-->
+    <div class="boddy">
+      <div class="slider owl-carousel">
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/Class RINA.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">AOSS From Class RINA</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/640px-বাংলাদেশ_পরমাণু_শক্তি_কমিশনের_লোগো.svg.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">Approval From Atomic Energy Commission</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/Screenshot (8).png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">AOSS From Class ABS</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/Class IRS.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">AOSS From Class IRS</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/Department Of Shipping, Bangladesh).png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">NOC From DOS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1
+      style="
+        text-align: center;
+        font-size: 34px;
+        font-weight: 700;
+        color: rgb(12, 200, 100);
+      "
+    >
+      Our Major Clients
+    </h1>
+    <!--gallery-->
+    <div class="boddy">
+      <div class="slider owl-carousel">
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/mgi.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">Meghna Group</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/loader.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">Seven Circle</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/abul-khair-group-logo-5C6C08FA1F-seeklogo.com.png"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">Abul Khair Shipping Ltd.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img">
+            <img
+              src="../logo/7796266_New Project (2).jpg"
+              alt=""
+              style="width: 200px; margin: auto"
+            />
+          </div>
+          <div class="content">
+            <div class="sub-title">Bashundhara Group</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div class="section group  row  mx-auto"style="width: 90%;">
+      <div class="col-md-4 span_1_of_3">
+        <h2 style="color: rgb(12, 200, 100)">Our Operational Strength</h2>
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Are Able To Perform Test/Inspection In Any Place Near
+          Dhaka,Narayangoj, Munshigonj With A Veryshort Notice.
+        </p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Are Able To Perform In Any Place In Bangladesh.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Our Administration Office Is In Commercial Hub Motijheel, But Our
+          Operational Office Is In Narayangonj, Near Meghna
+        </p>
+      </div>
+      <div class="col-md-4 span_1_of_3">
+        <h2 style="color: rgb(12, 200, 100)">Our Equipment</h2>
+      
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Micro Meter</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> MPI Machine</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Hardness Tester</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Ultrasonic Flow Detector</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Ultrasonic Thickness Gauge</p>
+      </div>
+      <div class="col-md-4 span_1_of_3">
+        <h2 style="color: rgb(12, 200, 100)">Our Technical Strength</h2>
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have A Strong Team Of Six Naval Architects Working As A Team.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have An Ex DNVGL Class Surveyor In Our Team.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have 06 NDT Inspector Qualified As Level II (UT, PT)</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have A Level III Qualified Inspector As An Advisor.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have One AWS Certified Welding Inspector.</p>
+      </div>
+    </div> -->
+
+<div class=" container-fuild " style="margin-left:10%;">
+  <div class="row">
+    <div class="col-sm-4 col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 style="color: rgb(12, 200, 100)">Our Operational Strength</h2>
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Are Able To Perform Test/Inspection In Any Place Near
+          Dhaka,Narayangoj, Munshigonj With A Veryshort Notice.
+        </p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Are Able To Perform In Any Place In Bangladesh.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Our Administration Office Is In Commercial Hub Motijheel, But Our
+          Operational Office Is In Narayangonj, Near Meghna
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 style="color: rgb(12, 200, 100)">Our Equipment</h2>
+      
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Micro Meter</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> MPI Machine</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Hardness Tester</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Ultrasonic Flow Detector</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> Ultrasonic Thickness Gauge</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h2 style="color: rgb(12, 200, 100)">Our Technical Strength</h2>
+        <br />
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have A Strong Team Of Six Naval Architects Working As A Team.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have An Ex DNVGL Class Surveyor In Our Team.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have 06 NDT Inspector Qualified As Level II (UT, PT)</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have A Level III Qualified Inspector As An Advisor.</p>
+        <p><i class="fa-solid fa-circle-arrow-right"></i> We Have One AWS Certified Welding Inspector.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    
+    
+
+
+
+    <script>
+      $(".slider").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+      });
+    </script>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html">home</a>
+          <a href="#about">about</a>
+          <a href="service.html">services</a>
+          <a href="#projects">projects</a>
+          <a href="#news">news</a>
+          <a href="#contact">contact</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+          <a href="#">ask questions</a>
+          <a href="#">terms of use</a>
+          <a href="#">privacy policy</a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a id="address" href="#"> <i class="fas fa-laptop-house"></i></a>
+          <a id="phone" href="#"> <i class="fas fa-phone"></i></a>
+          <a id="email" href="#">
+            <i class="fas fa-envelope"></i> sakieshahriar@gmail.com
+          </a>
+          <a href="index.html#contact">
+            <i class="fas fa-map-marker-alt"></i> Google Map
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="" id="faceook">
+            <i class="fab fa-facebook-f"></i> facebook
+          </a>
+          <a href="" id="twiter"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="" id="linkdin"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        copyright by
+        <span
+          ><a
+            href="https://www.facebook.com/MrJoarder/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ARSTech</a
+          ></span
+        >
+        | all rights reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- jquery file link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+      }
+    </script>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      let searchForm = document.querySelector(".header .search-form");
+
+      document.querySelector("#search-btn").onclick = () => {
+        searchForm.classList.toggle("active");
+        navbar.classList.remove("active");
+      };
+
+      let navbar = document.querySelector(".header .navbar");
+
+      document.querySelector("#menu-btn").onclick = () => {
+        navbar.classList.toggle("active");
+        searchForm.classList.remove("active");
+      };
+
+      window.onscroll = () => {
+        searchForm.classList.remove("active");
+        navbar.classList.remove("active");
+      };
+      const backToTopButton = document.querySelector("#back-to-top-btn");
+
+      window.addEventListener("scroll", scrollFunction);
+
+      function scrollFunction() {
+        if (window.pageYOffset > 300) {
+          // Show backToTopButton
+          if (!backToTopButton.classList.contains("btnEntrance")) {
+            backToTopButton.classList.remove("btnExit");
+            backToTopButton.classList.add("btnEntrance");
+            backToTopButton.style.display = "block";
+          }
+        } else {
+          // Hide backToTopButton
+          if (backToTopButton.classList.contains("btnEntrance")) {
+            backToTopButton.classList.remove("btnEntrance");
+            backToTopButton.classList.add("btnExit");
+            setTimeout(function () {
+              backToTopButton.style.display = "none";
+            }, 250);
+          }
+        }
+      }
+
+      backToTopButton.addEventListener("click", smoothScrollBackToTop);
+
+      // function backToTop() {
+      //   window.scrollTo(0, 0);
+      // }
+
+      function smoothScrollBackToTop() {
+        const targetPosition = 0;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 750;
+        let start = null;
+
+        window.requestAnimationFrame(step);
+
+        function step(timestamp) {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
+          window.scrollTo(
+            0,
+            easeInOutCubic(progress, startPosition, distance, duration)
+          );
+          if (progress < duration) window.requestAnimationFrame(step);
+        }
+      }
+
+      function easeInOutCubic(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t * t + b;
+        t -= 2;
+        return (c / 2) * (t * t * t + 2) + b;
+      }
+    </script>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
